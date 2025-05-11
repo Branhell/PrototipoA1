@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Participantes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Dashboard</h1>
+        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="misDatos.html">Mis Datos</a></li>
+            <li><a href="actividades.html">Mis Actividades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <script>
+        function cerrarSesion() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
+

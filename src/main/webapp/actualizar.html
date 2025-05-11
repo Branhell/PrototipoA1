@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Participante</title>
+</head>
+<body>
+    <h1>Actualizar Participante</h1>
+    <form action="ActualizarParticipanteServlet"" method="post">
+        <label for="id_participante">ID del Participante:</label>
+        <input type="number" id="id_participante" name="id_participante" required><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="historial">Historial:</label>
+        <input type="text" id="historial" name="historial"><br><br>
+
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" name="genero"><br><br>
+
+        <label for="proyecto_id">Proyecto ID:</label>
+        <input type="number" id="proyecto_id" name="proyecto_id"><br><br>
+
+        <label for="genero_id">Género ID:</label>
+        <input type="number" id="genero_id" name="genero_id"><br><br>
+
+        <button type="submit">Actualizar</button>
+    </form>
+    <br>
+    <a href="dashboard.jsp">Volver al Dashboard</a>
+</body>
+</html>
