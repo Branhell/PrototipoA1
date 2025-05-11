@@ -1,0 +1,129 @@
+:root {
+    --primario: #87CEEB;    
+    --secundario: #5DADE2;    
+    --acento1: #D6EAF8;    
+    --acento2: #F0F8FF;    
+    --acento3: #B3E5FC;    
+    --extra: #00CFC1;
+}
+
+body {    
+    background: linear-gradient(120deg, var(--acento2), var(--primario));    
+    color: var(--secundario);    
+    font-family: 'Poppins', sans-serif;    
+    margin: 0;    
+    padding: 0;    
+    min-height: 100vh;    
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;    
+    justify-content: center;
+}
+
+header {    
+    width: 100%;    
+    padding: 20px;    
+    text-align: center;    
+    font-size: 1.8em;    
+    font-weight: bold;    
+    color: var(--acento1);    
+    background: rgba(0, 0, 0, 0.1);    
+    border-bottom: 2px solid var(--secundario);
+}
+
+.contenedor-botones {    
+    display: flex;    
+    justify-content: center;    
+    margin: 20px;    
+    gap: 15px;
+}
+
+.contenedor-funcionalidades {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contenedor-funcionalidades button {    
+    background: linear-gradient(120deg, var(--extra), var(--acento3));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.4s ease;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-funcionalidades button:hover {    
+    background-color: var(--secundario);
+    transform: scale(1.07);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-bar {    
+    position: fixed;    
+    bottom: 15px;    
+    left: 50%;    
+    transform: translateX(-50%);    
+    display: flex;    
+    gap: 10px;
+}
+
+.social-icon {    
+    width: 50px;    
+    height: 50px;    
+    background-color: var(--acento3);    
+    color: var(--primario);    
+    font-size: 16px;    
+    border-radius: 50%;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {    
+    transform: scale(1.2);
+    opacity: 0.85;
+}
+
+.logo {    
+    width: 120px;    
+    animation: fadeIn 3s infinite alternate;    
+    opacity: 1;    
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {    
+    0% { opacity: 0.8; transform: scale(1); }    
+    100% { opacity: 1; transform: scale(1.05); }
+}
+
+.footer-links {    
+    display: flex;    
+    justify-content: center;    
+    gap: 20px;    
+    flex-wrap: wrap;    
+    padding: 15px;    
+    background-color: var(--acento3);    
+    border-radius: 15px;
+}
+
+.footer-links a {    
+    color: var(--extra);    
+    text-decoration: none;    
+    font-weight: bold;    
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {    
+    color: white;    
+    background-color: var(--extra);    
+    padding: 5px 10px;    
+    border-radius: 10px;
+}
